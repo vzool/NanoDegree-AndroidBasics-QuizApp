@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="me.vzool.quizapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:text="@string/who_are_you"
+            style="@style/AppQuestionTextViewStyle" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/question_image_layout_width"
+            android:layout_height="@dimen/question_image_layout_height"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/devil_or_angel"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@null"/>
+
+        <CheckBox
+            android:id="@+id/devil_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/devil"
+            android:layout_alignBaseline="@+id/angel_checkbox"
+            android:layout_alignBottom="@+id/angel_checkbox"
+            android:layout_alignStart="@+id/imageView" />
+
+        <CheckBox
+            android:id="@+id/angel_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="51dp"
+            android:textSize="20sp"
+            android:text="@string/angel"
+            android:layout_below="@+id/textView"
+            android:layout_alignEnd="@+id/imageView" />
+
+        <Button
+            android:id="@+id/question_one_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/answer"
+            android:onClick="moveToNextQuestion"
+            android:layout_marginTop="47dp"
+            android:layout_below="@+id/devil_checkbox"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</ScrollView>

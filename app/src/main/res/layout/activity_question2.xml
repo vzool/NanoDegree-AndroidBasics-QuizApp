@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="me.vzool.quizapp.Question2Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton"
+            android:layout_centerHorizontal="true"
+            android:text="@string/what_is_this_number"
+            style="@style/AppQuestionTextViewStyle" />
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="@dimen/question_image_layout_width"
+            android:layout_height="@dimen/question_image_layout_height"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/number_6_or_9"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:id="@+id/number_6_or_9_radioGroup"
+            android:layout_below="@+id/textView"
+            android:layout_alignEnd="@+id/imageButton"
+            android:layout_alignStart="@+id/imageButton">
+
+            <RadioButton
+                android:id="@+id/number_6_only"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_6_only" />
+
+            <RadioButton
+                android:id="@+id/number_9_only"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_9_only"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/answer"
+            android:onClick="moveToNextQuestion"
+            android:layout_below="@+id/number_6_or_9_radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.vzool.quizapp.ResultActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton"
+            android:layout_centerHorizontal="true"
+            android:text="@string/your_result"
+            style="@style/AppQuestionTextViewStyle" />
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="@dimen/question_image_layout_width"
+            android:layout_height="@dimen/question_image_layout_height"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:scaleType="fitXY"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/symbole_of_balance_yin_yang"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/the_result_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:text="@string/_9_9"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="74dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

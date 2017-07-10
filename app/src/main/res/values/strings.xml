@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="title_activity_question2">Question2Activity</string>
+    <string name="who_are_you">Who are you?</string>
+    <string name="devil">Devil</string>
+    <string name="angel">Angel</string>
+    <string name="answer">Answer</string>
+    <string name="what_is_this_number">What is this number?</string>
+    <string name="is_pink_a_color">Is Pink a color?</string>
+    <string name="_6_only">6 only</string>
+    <string name="_9_only">9 only</string>
+    <string name="yes_or_no">Yes or No...</string>
+    <string name="one_of_them">One of them</string>
+    <string name="no_one">No One</string>
+    <string name="which_color_is_evil">Which color is Evil?</string>
+    <string name="two_side">Two Side</string>
+    <string name="one_side">One Side</string>
+    <string name="the_really_peace_is_a_matter_of">The really Peace is a matter of?</string>
+    <string name="make_choice_to_move_to_next_question">Make a choice to move to next question</string>
+    <string name="result">Result</string>
+    <string name="question">Question</string>
+    <string name="make_choice_to_show_final_result">Make a final choice to show your result</string>
+    <string name="your_result">Your Result</string>
+    <string name="the_result">The Result</string>
+    <string name="_9_9">9/9</string>
+</resources>
